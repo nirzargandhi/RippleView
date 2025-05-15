@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RippleViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHR-Wu-WU7">
+                                <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="zTT-Vm-oXv">
+                                <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Nrg-ln-6xo"/>
+                                    <constraint firstAttribute="width" constant="50" id="gpA-U6-z4e"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zTT-Vm-oXv" firstAttribute="bottom" secondItem="JHR-Wu-WU7" secondAttribute="bottom" id="7QW-y5-f6O"/>
+                            <constraint firstItem="zTT-Vm-oXv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SJh-L7-DjF"/>
+                            <constraint firstItem="zTT-Vm-oXv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mXc-Na-yYJ"/>
+                            <constraint firstItem="zTT-Vm-oXv" firstAttribute="leading" secondItem="JHR-Wu-WU7" secondAttribute="leading" id="mmw-GS-ytS"/>
+                            <constraint firstItem="zTT-Vm-oXv" firstAttribute="trailing" secondItem="JHR-Wu-WU7" secondAttribute="trailing" id="qMN-5K-V3G"/>
+                            <constraint firstItem="zTT-Vm-oXv" firstAttribute="top" secondItem="JHR-Wu-WU7" secondAttribute="top" id="rde-Te-3tt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rippleView" destination="JHR-Wu-WU7" id="3Uf-dr-gyj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="-49"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tick" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
